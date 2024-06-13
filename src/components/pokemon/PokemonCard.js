@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Favourite from "../favourite/favourite";
 
 const Sprite = styled.img`
   width: 5em;
   height: 5em;
+`;
+
+const FavouriteContainer = styled.div`
+  position: absolute;
+  bottom: 2px; 
+  right: 3px;
+`;
+
+const CardContainer = styled.div`
+  height: 180px; /* Adjust this value to increase the height */
+  position: relative;
 `;
 
 export default class PokemonCard extends Component {
@@ -27,9 +39,15 @@ export default class PokemonCard extends Component {
   }
 
   render() {
+    const { name, pokemonIndex, imageLoading } = this.state;
+
+    const imageSrc = imageLoading
+      ? "https://via.placeholder.com/150" // placeholder while loading
+      : this.state.imageUrl;
+
     return (
       <div className="col-md-3 col-sm-6 mb-5">
-        <div className="card">
+        <CardContainer className="card">
           <h5 className="card-header d-flex justify-content-between">
             <span>{this.state.pokemonIndex}</span>
             <span className="ms-2">
@@ -50,7 +68,10 @@ export default class PokemonCard extends Component {
             src={this.state.imageUrl}
             alt={this.state.name}
           />
-        </div>
+          <FavouriteContainer>
+            <Favourite />
+          </FavouriteContainer>
+        </CardContainer>
       </div>
     );
   }

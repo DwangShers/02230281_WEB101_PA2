@@ -10,8 +10,9 @@ export default class NavBar extends Component {
             <button
               className="btn btn-warning ms-2"
               type="button"
+              onClick={this.props.toggleShowFavourites}
             >
-              Favourite
+              {this.props.showFavourites ? "Back to Pokémon" : "Favourite"}
             </button>
             <button className="btn btn-danger ms-2" type="button">
               Pokemon Caught
