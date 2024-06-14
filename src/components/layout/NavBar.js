@@ -14,7 +14,11 @@ export default class NavBar extends Component {
             >
               {this.props.showFavourites ? "Back to Pokémon" : "Favourite"}
             </button>
-            <button className="btn btn-danger ms-2" type="button">
+            <button
+              className="btn btn-danger ms-2"
+              type="button"
+              onClick={this.props.handlePokemonCaught} // Ensure handlePokemonCaught is defined in parent component
+            >
               Pokemon Caught
             </button>
           </div>

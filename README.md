@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+i am not making the favouritelist for now, as it is not working. will work on it later.
+so, first of all let make a new component , inside the pokemon folder,
+which is PokemonDetails.js.
+
+this component is for the deatils for the pokemon,
