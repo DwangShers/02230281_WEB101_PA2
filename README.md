@@ -8,10 +8,10 @@ This is a Pokedex website which shows the Pokemon and its detailed information.
 * Favourite:
 You can list your favourite pokemon.
 
-* Pokemon Caught
+* Pokemon Caught: 
 You can list down the count of pokemon's you caught.
 
-* Search for Pokemon
+* Search for Pokemon:
 You can search for the desired pokemon in a short period of time.
 
 ### Reference
